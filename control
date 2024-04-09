@@ -1,0 +1,9 @@
+Package: com.wtrwx.xhsplus
+Name: XhsPlus
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: A tweak for Xhs
+Maintainer: vita
+Author: vita
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
