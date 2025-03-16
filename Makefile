@@ -15,7 +15,7 @@ include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = XhsPlus
 
-XhsPlus_FILES = Tweak.x CustomSettingsViewController.m
+XhsPlus_FILES = XhsPlus.x XhsSettingsViewController.m
 XhsPlus_CFLAGS = -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/tweak.mk
