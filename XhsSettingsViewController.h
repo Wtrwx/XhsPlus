@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-@interface CustomSettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface XhsSettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 + (void)showSettings;
 

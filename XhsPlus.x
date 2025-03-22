@@ -25,7 +25,7 @@ static NSTimeInterval lastClickTime = 0;
     if (timeSinceLastClick < 0.5) {
         NSLog(@"[XhsPlus] 检测到双击");
         // 在调用 showSettings 时，附加当前的暗黑模式状态作为参数
-        [CustomSettingsViewController showSettings];
+        [XhsSettingsViewController showSettings];
     } else {
         NSLog(@"[XhsPlus] 检测到单击");
         lastClickTime = currentTime;

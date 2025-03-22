@@ -1,21 +1,21 @@
 #import <UIKit/UIKit.h>
 
-@interface CustomSettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface XhsSettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 + (void)showSettings;
 
 @end
 
-@implementation CustomSettingsViewController {
+@implementation XhsSettingsViewController {
     UITableView *_tableView; 
     NSArray *options;
 }
 
-static CustomSettingsViewController *instance = nil;
+static XhsSettingsViewController *instance = nil;
 
 + (void)showSettings {
     if (instance == nil) {
-        instance = [[CustomSettingsViewController alloc] init];
+        instance = [[XhsSettingsViewController alloc] init];
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:instance];
         navigationController.modalPresentationStyle = UIModalPresentationOverFullScreen;
         
@@ -122,7 +122,7 @@ static CustomSettingsViewController *instance = nil;
         cell.textLabel.text = option[@"title"];
         
         // 创建一个透明的 UIButton 用于拦截点击事件
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeXhs];
         button.frame = CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height);
         [button addTarget:self action:@selector(optionTapped:) forControlEvents:UIControlEventTouchUpInside];
         [cell.contentView addSubview:button];
