@@ -122,7 +122,7 @@ static XhsSettingsViewController *instance = nil;
         cell.textLabel.text = option[@"title"];
         
         // 创建一个透明的 UIButton 用于拦截点击事件
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeXhs];
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.frame = CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height);
         [button addTarget:self action:@selector(optionTapped:) forControlEvents:UIControlEventTouchUpInside];
         [cell.contentView addSubview:button];
